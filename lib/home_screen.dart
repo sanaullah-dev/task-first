@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task1/second_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
 
               colors: [
                // Color(0x1A271142),
-                Color.fromARGB(255, 39, 33, 41),
+                Color.fromARGB(255, 33, 37, 47),
                 Color.fromARGB(255, 0, 0, 0)
               ]
             ),
@@ -130,7 +131,12 @@ class HomeScreen extends StatelessWidget {
                         padding: EdgeInsets.symmetric(horizontal: 150,vertical: 15),
                         side: BorderSide(color: Colors.white)
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (ctx){
+                        return SecondScreen();
+                      }));
+                      },
+                    
                     child: const Text(
                       "Log In",
                       style: TextStyle(
