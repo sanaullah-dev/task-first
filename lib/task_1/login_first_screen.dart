@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:task1/second_screen.dart';
+import 'package:task1/task_1/login_second_screen.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class LoginFirstScreen extends StatelessWidget {
+  const LoginFirstScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -133,7 +133,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(builder: (ctx){
-                        return SecondScreen();
+                        return LoginSecondScreen();
                       }));
                       },
                     
